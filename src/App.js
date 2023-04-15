@@ -22,6 +22,7 @@ const Stack = createNativeStackNavigator();
 
 const App = () => {
   const [savedUsers, setsavedUsers] = useState([]);
+  console.log('dummy');
   const loadInitialData = useCallback(async () => {
     try {
       const db = await getDBConnection();
